@@ -59,7 +59,7 @@ const servicesItems = [
 
 const Services = () => {
     return (
-        <div className='bg-black text-white py-20' id='services'>
+        <div className='bg-white text-white py-20' id='services'>
             <div className='container mx-auto px-8  lg:px-24'>
                 <div className='grid grid-cols-1  lg:grid-cols-2 gap-8'>
                     {servicesItems.map((service) => (

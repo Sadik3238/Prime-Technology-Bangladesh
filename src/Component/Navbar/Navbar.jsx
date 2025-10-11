@@ -41,7 +41,7 @@ const navigationData = [
 const Navbar = () => {
     return (
 
-        <nav className='flex mx-auto items-center absolute z-50 w-full justify-between container mt-4 ml-16'>
+        <nav className='flex items-center fixed z-100 w-full justify-between py-4 top-0 left-0 bg-gray-500 px-4 lg:px-8'>
             <h1 className='text-3xl font-bold text-white'>PRIME TECH</h1>
             <ul className='flex'>
                 {
