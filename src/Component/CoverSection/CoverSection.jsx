@@ -4,14 +4,26 @@ const coverImgUrl = "https://i.ibb.co.com/M5Dw7cZS/erp.jpg"
 
 const CoverSection = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [showSmartText, setShowSmartText] = useState(false);
 
     useEffect(() => {
+        let timeoutId;
+
         const handleScroll = () => {
             const element = document.getElementById('cover-text');
             if (element) {
                 const rect = element.getBoundingClientRect();
                 const isElementVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
                 setIsVisible(isElementVisible);
+
+                if (isElementVisible) {
+                    timeoutId = setTimeout(() => {
+                        setShowSmartText(true);
+                    }, 1000); // 1-second delay
+                } else {
+                    setShowSmartText(false);
+                    clearTimeout(timeoutId);
+                }
             }
         };
 
@@ -20,6 +32,7 @@ const CoverSection = () => {
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            clearTimeout(timeoutId);
         };
     }, []);
 
@@ -34,7 +47,7 @@ const CoverSection = () => {
                     }`}
             >
                 <h1 className='font-bold lg:text-5xl'>PRIME TECHNOLOGY <br />   BANGLADESH</h1>
-                <h3 className='lg:text-2xl lg:mt-2'>SMART SOFTWARE, SMART BUSINESS</h3>
+                <h3 className={`lg:text-2xl lg:mt-2 text-[#e0ead0] transition-opacity duration-500 ${showSmartText ? 'opacity-100' : 'opacity-0'}`}>SMART SOFTWARE, SMART BUSINESS</h3>
             </div>
         </div>
     );

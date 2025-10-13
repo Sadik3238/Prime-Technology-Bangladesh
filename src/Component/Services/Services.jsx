@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 
 const servicesItems = [
@@ -6,7 +6,7 @@ const servicesItems = [
         id: 1,
         title: "Prime ERP",
         description: "Streamlined business process",
-        images: "https://i.ibb.co.com/tpqYXn1n/Prime-Technology-Bangladesh.jpg"
+        images: "./src/assets/image/ERP IMAGE.jpg"
     },
 
     {
@@ -16,7 +16,7 @@ const servicesItems = [
         images: "https://i.ibb.co.com/MkyyC17y/Prime-Technology-Bangladesh.jpg"
     },
     {
-        id: "3",
+        id: 3,
         title: "POS & Inventory Management Systems",
         description: "Optimized retail and trading workflows",
         images: "https://i.ibb.co.com/RGLkj6mL/Prime-Technology-Bangladesh.jpg"
@@ -58,14 +58,80 @@ const servicesItems = [
 
 
 const Services = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const servicesRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(servicesRef.current);
+                }
+            },
+            {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1,
+            }
+        );
+
+        if (servicesRef.current) {
+            observer.observe(servicesRef.current);
+        }
+
+        return () => {
+            if (servicesRef.current) {
+                observer.unobserve(servicesRef.current);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(servicesRef.current);
+                }
+            },
+            {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1,
+            }
+        );
+
+        if (servicesRef.current) {
+            observer.observe(servicesRef.current);
+        }
+
+        const handleNavLinkClick = () => {
+            setIsVisible(false); // Reset animation state
+            setTimeout(() => setIsVisible(true), 100); // Trigger animation after a short delay
+        };
+
+        window.addEventListener('servicesNavLinkClick', handleNavLinkClick);
+
+
+        return () => {
+            if (servicesRef.current) {
+                observer.unobserve(servicesRef.current);
+            }
+            window.removeEventListener('servicesNavLinkClick', handleNavLinkClick);
+        };
+    }, []);
+
     return (
-        <div className='bg-white text-white py-20' id='services'>
+        <div className='bg-white text-white py-20 overflow-x-hidden' id='services-section' ref={servicesRef}>
             <div className='container mx-auto px-8  lg:px-24'>
-                <div className='grid grid-cols-1  lg:grid-cols-2 gap-8'>
-                    {servicesItems.map((service) => (
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+                    {servicesItems.map((service, index) => (
                         <div key={service.id}
-                            className='bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg transform 
-                            transition-transform duration-300 hover:scale-105'>
+                            className={`bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg transform
+                            transition-all duration-1000 ease-out ${isVisible ? 'animate-slideInFromRight' : 'opacity-0'}`}
+                            style={{ animationDelay: `${index * 200}ms` }}
+                        >
                             <div>
                                 {service.images && <img src={service.images} alt={service.title} className='w-full h-48 object-cover rounded-t-lg' />}
                             </div>

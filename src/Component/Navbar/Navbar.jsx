@@ -17,12 +17,12 @@ const navigationData = [
     },
     {
         name: "SERVICES",
-        path: "#services",
+        path: "#services-section",
         id: 3
     },
     {
         name: "SOLUTIONS",
-        path: "/solutions",
+        path: "#solutions-section",
         id: 4
     },
     {
@@ -41,8 +41,8 @@ const navigationData = [
 const Navbar = () => {
     return (
 
-        <nav className='flex items-center fixed z-100 w-full justify-between py-4 top-0 left-0 bg-gray-500 px-4 lg:px-8'>
-            <h1 className='text-3xl font-bold text-white'>PRIME TECH</h1>
+        <nav className='flex items-center fixed z-100 w-full justify-between py-4 top-0 left-0 bg-[#e0e5d8] px-4 lg:px-8'>
+            <h1 className='text-3xl font-bold text-black'>PRIME TECH</h1>
             <ul className='flex'>
                 {
                     navigationData.map(route => <Links key={route.id} route={route} />)
