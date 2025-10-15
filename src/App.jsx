@@ -2,12 +2,15 @@ import './App.css'
 import CoverSection from './Component/CoverSection/CoverSection'
 import Navbar from './Component/Navbar/Navbar'
 import Services from './Component/Services/Services'
-import Manufactures from './Component/Solutions/Manufactures'
-import Solution from './Component/Solutions/Solution'
+import SolutionSection from './Component/Solutions/Solution'
 
 import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page on initial load
+  }, []);
+
   useEffect(() => {
     const handleSolutionsNavLinkClick = () => {
       const solutionsSection = document.getElementById('solutions-section');
@@ -28,10 +31,8 @@ function App() {
       <Navbar></Navbar>
       <CoverSection></CoverSection>
       <Services></Services>
-      <Solution></Solution>
-      <Manufactures></Manufactures>
+      <SolutionSection></SolutionSection>
     </div>
   )
 }
-
 export default App

@@ -16,7 +16,7 @@ const navigationData = [
         id: 2
     },
     {
-        name: "SERVICES",
+        name: "INDUSTRIES",
         path: "#services-section",
         id: 3
     },

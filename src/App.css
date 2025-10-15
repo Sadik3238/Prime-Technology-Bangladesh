@@ -29,3 +29,8 @@ body {
 .animate-slideInFromRight {
     animation: slideInFromRight 1s ease-out forwards;
 }
+
+.solution-card {
+    height: 150px;
+    width: 250px;
+}

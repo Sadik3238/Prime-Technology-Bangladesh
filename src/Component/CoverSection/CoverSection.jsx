@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import coverImg from '../../assets/Image/Cover_Image.png';
 
-const coverImgUrl = "https://i.ibb.co.com/M5Dw7cZS/erp.jpg"
+const coverImgUrl = coverImg;
 
 const CoverSection = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -38,7 +39,7 @@ const CoverSection = () => {
 
     return (
         <div
-            className="bg-cover bg-no-repeat lg:h-screen lg:relative pt-20"
+            className="bg-cover bg-no-repeat bg-center min-h-screen lg:relative pt-20"
             style={{ backgroundImage: `url(${coverImgUrl})` }}>
 
             <div

@@ -1,4 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
+import industryImg from '../../assets/Image/industry.png';
+
+
+const industryImgUrl = industryImg;
 
 
 const servicesItems = [
@@ -19,7 +23,7 @@ const servicesItems = [
         id: 3,
         title: "POS & Inventory Management Systems",
         description: "Optimized retail and trading workflows",
-        images: "./src/assets/image/Poss & Inventory System.png"
+        images: "./src/assets/image/Pos & Inventory Management .png"
     },
 
     {
@@ -38,7 +42,7 @@ const servicesItems = [
         id: 6,
         title: "Custom ERP Development",
         description: "Tailored solutions for unique business needs",
-        images: "./src/assets/image/Custom ERP Development.png"
+        images: "./src/assets/image/Custom & Development.png"
     },
     {
         id: 7,
@@ -123,7 +127,8 @@ const Services = () => {
     }, []);
 
     return (
-        <div className='bg-white text-white py-20 overflow-x-hidden' id='services-section' ref={servicesRef}>
+        <div className='bg-cover bg-no-repeat bg-center min-h-screen lg:relative pt-20 text-white py-20 overflow-x-hidden' id='services-section' ref={servicesRef}
+            style={{ backgroundImage: `url(${industryImgUrl})` }}>
             <div className='container mx-auto px-8  lg:px-24'>
                 <div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
                     {servicesItems.map((service, index) => (
