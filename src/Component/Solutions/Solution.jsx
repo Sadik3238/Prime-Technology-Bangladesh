@@ -15,7 +15,7 @@ const Solution = () => {
 
                 {/* Manufacturing Industry */}
 
-                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 grid grid-cols-4 items-center relative">
+                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 grid grid-cols-4 items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             {/* Replace the SVG below with the actual icon as per your requirements */}
@@ -29,7 +29,7 @@ const Solution = () => {
 
 
                 {/* Health care */}
-                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative">
+                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             {/* Replace the SVG below with the actual icon as per your requirements */}
@@ -43,7 +43,7 @@ const Solution = () => {
 
 
                 {/* Education */}
-                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative">
+                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             {/* Replace the SVG below with the actual icon as per your requirements */}
@@ -58,7 +58,7 @@ const Solution = () => {
 
                 {/* Corporate Solutions */}
 
-                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative">
+                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             {/* Replace the SVG below with the actual icon as per your requirements */}
@@ -72,7 +72,7 @@ const Solution = () => {
 
 
                 {/* Butex */}
-                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative">
+                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             {/* Replace the SVG below with the actual icon as per your requirements */}
@@ -85,7 +85,7 @@ const Solution = () => {
                 </div>
 
                 {/* Food and baverase */}
-                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative">
+                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             {/* Replace the SVG below with the actual icon as per your requirements */}
@@ -99,7 +99,7 @@ const Solution = () => {
 
 
                 {/* Garments */}
-                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative">
+                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             {/* Replace the SVG below with the actual icon as per your requirements */}
@@ -113,7 +113,7 @@ const Solution = () => {
 
 
                 {/* Tex-tile industry */}
-                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative">
+                <div className="bg-[#21263B] w-64 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             {/* Replace the SVG below with the actual icon as per your requirements */}

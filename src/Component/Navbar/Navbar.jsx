@@ -42,7 +42,7 @@ const Navbar = () => {
     return (
 
         <nav className='flex items-center fixed z-100 w-full justify-between py-4 top-0 left-0 bg-[#e0e5d8] px-4 lg:px-8'>
-            <h1 className='text-3xl font-bold text-black'>PRIME TECH</h1>
+            <h1 className='text-3xl font-bold text-black hover:text-gray-600'>PRIME TECH</h1>
             <ul className='flex'>
                 {
                     navigationData.map(route => <Links key={route.id} route={route} />)
