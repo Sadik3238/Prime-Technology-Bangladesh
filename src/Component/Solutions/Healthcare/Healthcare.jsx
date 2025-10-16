@@ -8,7 +8,7 @@ const Healthcare = () => {
                 <div className='flex justify-between px-16'>
                     <div>
                         <div>
-                            <img src="./src/assets/image/manufacturing.png" alt="" className='max-w-11/12' />
+                            <img src="./src/assets/image/health.png" alt="" className='max-w-11/12' />
                         </div>
                     </div>
 

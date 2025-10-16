@@ -44,7 +44,8 @@ function Solution({ onSectorClick }) {
                 </div>
 
                 {/* Education */}
-                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
+                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer"
+                    onClick={() => onSectorClick('Educations')}>
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             <GraduationCap size={40} color="#21263B" />
@@ -56,7 +57,8 @@ function Solution({ onSectorClick }) {
                 </div>
 
                 {/* Corporate Solutions */}
-                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
+                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer"
+                    onClick={() => onSectorClick('CorporateSolutions')}>
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             <Briefcase size={40} color="#21263B" />
@@ -67,20 +69,22 @@ function Solution({ onSectorClick }) {
                     </div>
                 </div>
 
-                {/* BOTEX */}
-                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
+                {/* BUTEX */}
+                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer"
+                    onClick={() => onSectorClick('Butex')}>
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             <Shirt size={40} color="#21263B" />
                         </div>
                     </div>
                     <div className="mt-16 text-center">
-                        <h2 className="text-white font-semibold text-lg">BOTEX</h2>
+                        <h2 className="text-white font-semibold text-lg">BUTEX</h2>
                     </div>
                 </div>
 
                 {/* Food and Beverage */}
-                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
+                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer"
+                    onClick={() => onSectorClick("FoodAndBeverage")}>
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             <Factory size={40} color="#21263B" />
@@ -92,7 +96,8 @@ function Solution({ onSectorClick }) {
                 </div>
 
                 {/* Garments */}
-                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
+                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer"
+                    onClick={() => onSectorClick('Garments')}>
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             <Shirt size={40} color="#21263B" />
@@ -104,7 +109,8 @@ function Solution({ onSectorClick }) {
                 </div>
 
                 {/* Textile Industry */}
-                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer">
+                <div className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer"
+                    onClick={() => onSectorClick('TextileIndustry')}>
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             <Factory size={40} color="#21263B" />
@@ -123,7 +129,6 @@ function Solution({ onSectorClick }) {
 // ----------------------------------------------------------------------
 
 // --- Manufactures Component ---
-
 const Manufactures = () => {
     return (
         <div>
@@ -191,8 +196,6 @@ const Manufactures = () => {
     );
 };
 
-
-
 // -------- Healthcare Component --------
 const Healthcare = () => {
     return (
@@ -202,7 +205,418 @@ const Healthcare = () => {
                     <div>
                         <div>
                             {/* NOTE: Ensure the image path is correct relative to where this component is run */}
-                            <img src="./src/assets/image/manufacturing.png" alt="Manufacturing" className='max-w-11/12' />
+                            <img src="./src/assets/image/health.png" alt="Healthcare" className='max-w-11/12' />
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1 className='text-4xl font-bold text-black '>Manufacturing ERP Bangladesh</h1>
+                        <p className='mt-4 text-xl text-gray-400'>Manufacturing ERP in Bangladesh is a web-based solution
+                            that optimizes and manages a company's core manufacturing processes. It integrates production
+                            planning, inventory control, and supply chain management into a single system.
+                            The software helps businesses streamline operations, reduce costs, and improve overall efficiency.
+                            It is designed to meet the specific needs of the local manufacturing industry.
+                        </p>
+
+                        <div className='mt-8'>
+                            <div className='flex justify-between'>
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+// --------- Education Component -------
+const Educations = () => {
+
+    return (
+        <div>
+            <div className='container mx-auto mt-16'>
+                <div className='flex justify-between px-16'>
+                    <div>
+                        <div>
+                            {/* NOTE: Ensure the image path is correct relative to where this component is run */}
+                            <img src="./src/assets/image/education.png" alt="Education" className='max-w-11/12' />
+                        </div>
+                    </div>
+
+                    <div className=''>
+                        <h1 className='text-4xl font-bold text-black '>Manufacturing ERP Bangladesh</h1>
+                        <p className='mt-4 text-xl text-gray-400'>Manufacturing ERP in Bangladesh is a web-based solution
+                            that optimizes and manages a company's core manufacturing processes. It integrates production
+                            planning, inventory control, and supply chain management into a single system.
+                            The software helps businesses streamline operations, reduce costs, and improve overall efficiency.
+                            It is designed to meet the specific needs of the local manufacturing industry.
+                        </p>
+
+                        <div className='mt-8'>
+                            <div className='flex justify-between'>
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// --------- Corporate solutions --------
+const CorporateSolutions = () => {
+    return (
+        <div>
+            <div className='container mx-auto mt-16'>
+                <div className='flex justify-between px-16'>
+                    <div>
+                        <div>
+                            {/* NOTE: Ensure the image path is correct relative to where this component is run */}
+                            <img src="./src/assets/image/corporate.png" alt="Corporate Solutions" className='max-w-11/12' />
+                        </div>
+                    </div>
+
+                    <div className=''>
+                        <h1 className='text-4xl font-bold text-black '>Manufacturing ERP Bangladesh</h1>
+                        <p className='mt-4 text-xl text-gray-400'>Manufacturing ERP in Bangladesh is a web-based solution
+                            that optimizes and manages a company's core manufacturing processes. It integrates production
+                            planning, inventory control, and supply chain management into a single system.
+                            The software helps businesses streamline operations, reduce costs, and improve overall efficiency.
+                            It is designed to meet the specific needs of the local manufacturing industry.
+                        </p>
+
+                        <div className='mt-8'>
+                            <div className='flex justify-between'>
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+
+}
+
+// --------- Butex ----------
+const Butex = () => {
+    return (
+        <div>
+            <div className='container mx-auto mt-16'>
+                <div className='flex justify-between px-16'>
+                    <div>
+                        <div>
+                            {/* NOTE: Ensure the image path is correct relative to where this component is run */}
+                            <img src="./src/assets/image/Butex.png" alt="Butex" className='max-w-11/12' />
+                        </div>
+                    </div>
+
+                    <div className=''>
+                        <h1 className='text-4xl font-bold text-black '>Manufacturing ERP Bangladesh</h1>
+                        <p className='mt-4 text-xl text-gray-400'>Manufacturing ERP in Bangladesh is a web-based solution
+                            that optimizes and manages a company's core manufacturing processes. It integrates production
+                            planning, inventory control, and supply chain management into a single system.
+                            The software helps businesses streamline operations, reduce costs, and improve overall efficiency.
+                            It is designed to meet the specific needs of the local manufacturing industry.
+                        </p>
+
+                        <div className='mt-8'>
+                            <div className='flex justify-between'>
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// ------ Food & Beverage --------
+const FoodAndBeverage = () => {
+    return (
+        <div>
+            <div className='container mx-auto mt-16'>
+                <div className='flex justify-between px-16'>
+                    <div>
+                        <div>
+                            {/* NOTE: Ensure the image path is correct relative to where this component is run */}
+                            <img src="./src/assets/image/Food & Beverage.png" alt="Food & Beverage" className='max-w-11/12' />
+                        </div>
+                    </div>
+
+                    <div className=''>
+                        <h1 className='text-4xl font-bold text-black '>Manufacturing ERP Bangladesh</h1>
+                        <p className='mt-4 text-xl text-gray-400'>Manufacturing ERP in Bangladesh is a web-based solution
+                            that optimizes and manages a company's core manufacturing processes. It integrates production
+                            planning, inventory control, and supply chain management into a single system.
+                            The software helps businesses streamline operations, reduce costs, and improve overall efficiency.
+                            It is designed to meet the specific needs of the local manufacturing industry.
+                        </p>
+
+                        <div className='mt-8'>
+                            <div className='flex justify-between'>
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+
+// ------- Garments Components --------
+const Garments = () => {
+    return (
+        <div>
+            <div className='container mx-auto mt-16'>
+                <div className='flex justify-between px-16'>
+                    <div>
+                        <div>
+                            {/* NOTE: Ensure the image path is correct relative to where this component is run */}
+                            <img src="./src/assets/image/garments.png" alt="Garments" className='max-w-11/12' />
+                        </div>
+                    </div>
+
+                    <div className=''>
+                        <h1 className='text-4xl font-bold text-black '>Manufacturing ERP Bangladesh</h1>
+                        <p className='mt-4 text-xl text-gray-400'>Manufacturing ERP in Bangladesh is a web-based solution
+                            that optimizes and manages a company's core manufacturing processes. It integrates production
+                            planning, inventory control, and supply chain management into a single system.
+                            The software helps businesses streamline operations, reduce costs, and improve overall efficiency.
+                            It is designed to meet the specific needs of the local manufacturing industry.
+                        </p>
+
+                        <div className='mt-8'>
+                            <div className='flex justify-between'>
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+
+
+                                <div className='space-y-8'>
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+
+                                    <div className='flex space-x-2'>
+                                        <CircleCheckBig />
+                                        <p> Automate production and supply chain </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// ------- Textile Industry -------
+const TextileIndustry = () => {
+    return (
+        <div>
+            <div className='container mx-auto mt-16'>
+                <div className='flex justify-between px-16'>
+                    <div>
+                        <div>
+                            {/* NOTE: Ensure the image path is correct relative to where this component is run */}
+                            <img src="./src/assets/image/textile.jpg" alt="Textile Industry" className='max-w-11/12' />
                         </div>
                     </div>
 
@@ -264,6 +678,8 @@ const Healthcare = () => {
 
 
 
+
+
 // ----------------------------------------------------------------------
 
 // --- Main App Component for State Management ---
@@ -283,6 +699,19 @@ function SolutionSection() {
                 return <Manufactures />;
             case 'Healthcare':
                 return <Healthcare />;
+            case 'Educations':
+                return <Educations />;
+            case 'CorporateSolutions':
+                return <CorporateSolutions />
+            case 'Butex':
+                return <Butex />
+            case 'FoodAndBeverage':
+                return <FoodAndBeverage />
+            case 'Garments':
+                return <Garments />
+            case 'TextileIndustry':
+                return <TextileIndustry />
+
             // Add other cases for new sectors here
             default:
                 return <Solution onSectorClick={handleSectorClick} />;

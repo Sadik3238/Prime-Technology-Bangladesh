@@ -11,8 +11,8 @@ const navigationData = [
     },
 
     {
-        name: "MISSION",
-        path: "/mission",
+        name: "ABOUT US",
+        path: "/about",
         id: 2
     },
     {
@@ -26,8 +26,8 @@ const navigationData = [
         id: 4
     },
     {
-        name: "ABOUT US",
-        path: "/about",
+        name: "MISSION",
+        path: "/mission",
         id: 5
     },
     {
