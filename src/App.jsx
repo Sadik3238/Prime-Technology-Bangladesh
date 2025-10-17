@@ -3,6 +3,7 @@ import CoverSection from './Component/CoverSection/CoverSection'
 import Navbar from './Component/Navbar/Navbar'
 import Services from './Component/Services/Services'
 import SolutionSection from './Component/Solutions/Solution'
+import About from './Component/About/About'
 
 import { useEffect } from 'react';
 
@@ -30,6 +31,7 @@ function App() {
     <div>
       <Navbar></Navbar>
       <CoverSection></CoverSection>
+      <About></About>
       <Services></Services>
       <SolutionSection></SolutionSection>
     </div>

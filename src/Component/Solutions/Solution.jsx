@@ -726,7 +726,7 @@ function SolutionSection() {
                 <div className="container mx-auto mt-4 px-16">
                     <button
                         onClick={() => setActiveSection('Solution')}
-                        className="text-blue-500 hover:text-blue-700 font-semibold mt-8">
+                        className="text-blue-500 hover:text-blue-700 font-semibold mt-2">
                         &larr; Back to Sectors
                     </button>
                 </div>

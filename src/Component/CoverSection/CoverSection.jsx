@@ -44,8 +44,8 @@ const CoverSection = () => {
 
             <div
                 id="cover-text"
-                className={`text-white lg:absolute lg:bottom-10 lg:left-10 lg:text-left transition-all duration-1000 ease-out ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-                    }`}
+                className={`text-white lg:absolute lg:bottom-10 lg:left-10 lg:text-left transition-all 
+                    duration-1000 ease-out ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}
             >
                 <h1 className='font-bold lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400'>PRIME TECHNOLOGY <br />   BANGLADESH</h1>
                 <h3 className={`lg:text-2xl lg:mt-2 text-[#e0ead0] transition-opacity duration-500 ${showSmartText ? 'opacity-100' : 'opacity-0'}`}>SMART SOFTWARE, SMART BUSINESS</h3>
@@ -54,4 +54,4 @@ const CoverSection = () => {
     );
 };
 
-export default CoverSection;
+export default (CoverSection);

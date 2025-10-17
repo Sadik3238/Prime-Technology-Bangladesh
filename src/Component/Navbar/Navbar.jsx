@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Links from './Links'
 
 
@@ -12,7 +12,7 @@ const navigationData = [
 
     {
         name: "ABOUT US",
-        path: "/about",
+        path: "#about-section",
         id: 2
     },
     {
@@ -38,7 +38,7 @@ const navigationData = [
 
 ]
 
-const Navbar = () => {
+const Navbar = memo(() => {
     return (
 
         <nav className='flex items-center fixed z-100 w-full justify-between py-4 top-0 left-0 bg-[#e0e5d8] px-4 lg:px-8'>
@@ -51,6 +51,6 @@ const Navbar = () => {
 
         </nav>
     )
-}
+})
 
 export default Navbar

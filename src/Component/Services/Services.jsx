@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import industryImg from '../../assets/Image/industry.png';
+// import industryImg from '../../assets/Image/industry.png';
 
 
-const industryImgUrl = industryImg;
+// const industryImgUrl = industryImg;
 
 
 const servicesItems = [
@@ -127,19 +127,18 @@ const Services = () => {
     }, []);
 
     return (
-        <div className='bg-cover bg-no-repeat bg-center min-h-screen lg:relative pt-20 text-white py-20 overflow-x-hidden' id='services-section' ref={servicesRef}
-            style={{ backgroundImage: `url(${industryImgUrl})` }}>
+        <div className='bg-white bg-no-repeat bg-center min-h-screen lg:relative pt-20 text-white py-20 overflow-x-hidden' id='services-section' ref={servicesRef}>
             <div className='container mx-auto px-8  lg:px-24'>
                 <div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
                     {servicesItems.map((service, index) => (
                         <div key={service.id}
                             className={`bg-blue-950 px-6 pb-6 rounded-lg hover:shadow-lg transform
-                            transition-all duration-1000 ease-out ${isVisible ? 'animate-slideInFromRight' : 'opacity-0'}`}
+                            transition-all duration-500 ease-out ${isVisible ? 'animate-slideInFromRight' : 'opacity-0'}`}
                             style={{ animationDelay: `${index * 200}ms` }}
                         >
                             <div>
                                 {service.images && <img src={service.images} alt={service.title} className='w-full h-48 object-cover rounded-full mt-1
-                                transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer' />}
+                                transition-all duration-100 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer' />}
                             </div>
 
 
