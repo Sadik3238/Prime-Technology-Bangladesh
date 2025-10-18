@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { CircleCheckBig } from "react"
 // import industryImg from '../../assets/Image/industry.png';
 
 
@@ -147,6 +148,7 @@ const Services = () => {
                                 {service.title}
                             </h3>
                             <p className='mt-2 text-gray-300'>{service.description}</p>
+
 
                         </div>
                     ))}

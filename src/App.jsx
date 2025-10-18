@@ -4,8 +4,15 @@ import Navbar from './Component/Navbar/Navbar'
 import Services from './Component/Services/Services'
 import SolutionSection from './Component/Solutions/Solution'
 import About from './Component/About/About'
+import Footer from './Component/Footer/Footer'
+import Mission from './Component/Mission/Mission'
+import End from './Component/Footer/End'
+
+
 
 import { useEffect } from 'react';
+import { Contact } from 'lucide-react'
+
 
 function App() {
   useEffect(() => {
@@ -32,8 +39,13 @@ function App() {
       <Navbar></Navbar>
       <CoverSection></CoverSection>
       <About></About>
+      <Mission></Mission>
       <Services></Services>
       <SolutionSection></SolutionSection>
+      <Footer></Footer>
+      <End></End>
+
+
     </div>
   )
 }

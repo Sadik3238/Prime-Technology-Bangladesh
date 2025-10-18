@@ -15,24 +15,26 @@ const navigationData = [
         path: "#about-section",
         id: 2
     },
+
+    {
+        name: "MISSION",
+        path: "#mission-section",
+        id: 3
+    },
     {
         name: "INDUSTRIES",
         path: "#services-section",
-        id: 3
+        id: 4
     },
     {
         name: "SOLUTIONS",
         path: "#solutions-section",
-        id: 4
-    },
-    {
-        name: "MISSION",
-        path: "/mission",
         id: 5
     },
+
     {
         name: "CONTACT US",
-        path: "/contact us",
+        path: "#contact-section",
         id: 6
     },
 

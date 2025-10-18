@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Factory, HeartPulse, GraduationCap, Briefcase, Shirt, CircleCheckBig } from 'lucide-react';
+import { Factory, HeartPulse, GraduationCap, Briefcase, Shirt, CircleCheckBig, Hamburger } from 'lucide-react';
 
 // --- Solution Component ---
 
@@ -17,8 +17,7 @@ function Solution({ onSectorClick }) {
                 {/* Manufacturing Industry - Clickable Card to switch views */}
                 <div
                     className="bg-[#21263B] w-64 h-40 rounded-lg shadow-lg p-4 flex flex-col items-center relative transition-all duration-200 ease-in-out hover:z-10 hover:shadow-xl hover:scale-105 hover:-translate-y-4 cursor-pointer"
-                    onClick={() => onSectorClick('Manufactures')}
-                >
+                    onClick={() => onSectorClick('Manufactures')}>
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
                             <Factory size={40} color="#21263B" />
@@ -38,7 +37,7 @@ function Solution({ onSectorClick }) {
                         </div>
                     </div>
                     <div className="mt-16 text-center">
-                        <h2 className="text-white font-semibold text-lg">HEALTHCARE</h2>
+                        <h2 className="text-white font-semibold text-lg">Healthcare</h2>
                     </div>
 
                 </div>
@@ -52,7 +51,7 @@ function Solution({ onSectorClick }) {
                         </div>
                     </div>
                     <div className="mt-16 text-center">
-                        <h2 className="text-white font-semibold text-lg">EDUCATION</h2>
+                        <h2 className="text-white font-semibold text-lg">Education</h2>
                     </div>
                 </div>
 
@@ -65,7 +64,7 @@ function Solution({ onSectorClick }) {
                         </div>
                     </div>
                     <div className="mt-16 text-center">
-                        <h2 className="text-white font-semibold text-lg">CORPORATE SOLUTIONS</h2>
+                        <h2 className="text-white font-semibold text-lg">Corporate Solutions</h2>
                     </div>
                 </div>
 
@@ -78,7 +77,7 @@ function Solution({ onSectorClick }) {
                         </div>
                     </div>
                     <div className="mt-16 text-center">
-                        <h2 className="text-white font-semibold text-lg">BUTEX</h2>
+                        <h2 className="text-white font-semibold text-lg">Butex</h2>
                     </div>
                 </div>
 
@@ -87,11 +86,11 @@ function Solution({ onSectorClick }) {
                     onClick={() => onSectorClick("FoodAndBeverage")}>
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                         <div className="rounded-full bg-[#f2f2f2] border-4 border-white w-24 h-24 flex items-center justify-center shadow hover:bg-gray-300">
-                            <Factory size={40} color="#21263B" />
+                            <Hamburger size={40} color="#21263B" />
                         </div>
                     </div>
                     <div className="mt-16 text-center">
-                        <h2 className="text-white font-semibold text-lg">FOOD AND BEVERAGE</h2>
+                        <h2 className="text-white font-semibold text-lg">Food & Beverage</h2>
                     </div>
                 </div>
 
@@ -104,7 +103,7 @@ function Solution({ onSectorClick }) {
                         </div>
                     </div>
                     <div className="mt-16 text-center">
-                        <h2 className="text-white font-semibold text-lg">GARMENTS</h2>
+                        <h2 className="text-white font-semibold text-lg">Garments</h2>
                     </div>
                 </div>
 
@@ -117,7 +116,7 @@ function Solution({ onSectorClick }) {
                         </div>
                     </div>
                     <div className="mt-16 text-center">
-                        <h2 className="text-white font-semibold text-lg">TEXTILE INDUSTRY</h2>
+                        <h2 className="text-white font-semibold text-lg">Textile Industry</h2>
                     </div>
                 </div>
 

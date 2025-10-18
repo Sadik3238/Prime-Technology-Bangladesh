@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { CircleCheckBig } from 'lucide-react';
 
 
@@ -9,6 +9,34 @@ const aboutCoverImgUrl = aboutUsCoverImg;
 const aboutImg = aboutWorkImg;
 
 const About = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const aboutImageRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target); // Stop observing once visible
+                }
+            },
+            {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.5, // Trigger when 50% of the element is visible
+            }
+        );
+
+        if (aboutImageRef.current) {
+            observer.observe(aboutImageRef.current);
+        }
+
+        return () => {
+            if (aboutImageRef.current) {
+                observer.unobserve(aboutImageRef.current);
+            }
+        };
+    }, []);
 
     return (
 
@@ -34,47 +62,33 @@ const About = () => {
                             <h1 className='mt-6 text-3xl'>Why Choose Prime Technology</h1>
 
                             {/* content */}
-                            <div className='flex'>
-                                <div>
-                                    <div className='flex space-x-2 mt-2'>
-                                        <CircleCheckBig />
-                                        <p>Complete IT Solutions</p>
-                                    </div>
 
-                                    <div className='flex space-x-2 mt-2'>
-                                        <CircleCheckBig />
-                                        <p>Industry Expertise</p>
-                                    </div>
-
-                                    <div className='flex space-x-2 mt-2'>
-                                        <CircleCheckBig />
-                                        <p>Digital Transformation Partner</p>
-                                    </div>
-
-                                    <div className='flex space-x-2 mt-2'>
-                                        <CircleCheckBig />
-                                        <p>Reliable Support</p>
-                                    </div>
+                            <div>
+                                <div className='flex space-x-2 mt-2'>
+                                    <CircleCheckBig />
+                                    <p>Complete IT Solutions</p>
                                 </div>
 
-                                {/* button */}
-                                <div className='space-x-6 mt-30'>
-                                    <button className="bg-gradient-to-r from-green-400 to-blue-400 text-black text-bold
-                                                transform transition-transform duration-300 hover:scale-105 px-4 py-2
-                                                rounded-full cursor-pointer">EXPLORE INDUSTRIES</button>
-
-                                    <button className="bg-gradient-to-r from-green-400 to-blue-400 text-black text-bold
-                                                transform transition-transform duration-300 hover:scale-105 px-4 py-2
-                                                rounded-full cursor-pointer">EXPLORE SOLUTIONS</button>
+                                <div className='flex space-x-2 mt-2'>
+                                    <CircleCheckBig />
+                                    <p>Industry Expertise</p>
                                 </div>
 
+                                <div className='flex space-x-2 mt-2'>
+                                    <CircleCheckBig />
+                                    <p>Digital Transformation Partner</p>
+                                </div>
+
+                                <div className='flex space-x-2 mt-2'>
+                                    <CircleCheckBig />
+                                    <p>Reliable Support</p>
+                                </div>
                             </div>
-
                         </div>
                     </div>
 
                     <div className='py-16 px-5'>
-                        <div className="w-[600px] h-[400px] rounded-2xl"
+                        <div ref={aboutImageRef} className={`w-[600px] h-[400px] rounded-2xl transition-all duration-1000 ease-out ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}
                             style={{ backgroundImage: `url(${aboutImg})` }}>
 
                         </div>
